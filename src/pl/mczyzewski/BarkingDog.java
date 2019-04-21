@@ -2,7 +2,7 @@ package pl.mczyzewski;
 
 public class BarkingDog {
 
-    public static boolean hourOfDay(boolean barking, int hourOfDay) {
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
 
 
         if (barking == true) {
