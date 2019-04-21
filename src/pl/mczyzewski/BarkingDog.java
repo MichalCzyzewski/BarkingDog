@@ -9,7 +9,7 @@ public class BarkingDog {
             return false;
         } else if (hourOfDay <= 7) {
             return true;
-        } else if (hourOfDay < 22) {
+        } else if (hourOfDay < 23) {
             return false;
         } else if (hourOfDay > 23) {
             return false;
