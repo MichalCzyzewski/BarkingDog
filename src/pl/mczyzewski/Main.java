@@ -3,8 +3,8 @@ package pl.mczyzewski;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println(BarkingDog.shouldWakeUp(true,0));
 
-        BarkingDog.shouldWakeUp(true,4);
 
     }
 }

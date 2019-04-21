@@ -3,15 +3,22 @@ package pl.mczyzewski;
 public class BarkingDog {
 
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
-
-
-        if (barking == true) {
-            if (hourOfDay >= 8 && hourOfDay <= 22) {
-                return true;
-            } else if (hourOfDay <= 0 && hourOfDay > 23) {
-                return false;
-            }
+        if (barking == false) {
+            return false;
+        } else if (hourOfDay < 0) {
+            return false;
+        } else if (hourOfDay <= 7) {
+            return true;
+        } else if (hourOfDay < 22) {
+            return false;
+        } else if (hourOfDay > 23) {
+            return false;
         }
-        return false;
+        return true;
     }
-    }
+
+}
+
+
+
+
